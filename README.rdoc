@@ -10,23 +10,23 @@ Para configurar o bootstrap 3 no rails são necessários os seguintes passos:
   class Application < Rails::Application
 
     #bootstrap diretório das imagens
-  ->  config.assets.paths << "#{ModeloBootstrap3}/vendor/assets/fonts"
+    config.assets.paths << "#{ModeloBootstrap3}/vendor/assets/fonts"
 
   Substituindo "ModeloBootstrap3" pelo nome que aparece no modulo da classe.
 
-  6 - Abrir o arquivo bootstrap.css na pasta /vendor/assets/stylesheets e fazer as seguintes alterações:
-    6.1 - busque por @font-faces;
-    6.1 - Substitua pelo trecho abaixo:
+6 - Abrir o arquivo bootstrap.css na pasta /vendor/assets/stylesheets e fazer as seguintes alterações:
+  6.1 - busque por @font-faces;
+  6.1 - Substitua pelo trecho abaixo:
 
-      @font-face {
-        font-family: 'Glyphicons Halflings';
+    @font-face {
+      font-family: 'Glyphicons Halflings';
 
-        src: url('/assets/glyphicons-halflings-regular.eot');
-        src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
-        url('/assets/glyphicons-halflings-regular.woff2') format('woff2'), 
-        url('/assets/glyphicons-halflings-regular.woff') format('woff'), 
-        url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), 
-        url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-      }
+      src: url('/assets/glyphicons-halflings-regular.eot');
+      src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+      url('/assets/glyphicons-halflings-regular.woff2') format('woff2'), 
+      url('/assets/glyphicons-halflings-regular.woff') format('woff'), 
+      url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), 
+      url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    }
 7 - No terminal use o comando "rake assets:precompile -RAILS_ENV=development"
 8 - Inicialize o servidor.      
