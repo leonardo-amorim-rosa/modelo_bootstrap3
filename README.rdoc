@@ -1,10 +1,10 @@
 Para configurar o bootstrap 3 no rails são necessários os seguintes passos:
 
-1 - baixar a versão 3.3.4 no site do oficial <br/>
-2 - copiar o arquivo bootstrap.css para a pasta /vendor/assets/stylesheets do seu projeto <br/>
-3 - copiar o arquivo bootstrap.js para a pasta /vendor/assets/stylesheets do seu projeto <br/>
-4 - copiar a pasta fonts para a pasta /vendor/assets/ do seu projeto <br/>
-5 - Alterar o arquivo application.rb localizado em /seu_projeto/config/ com a seguintes informação: <br/>
+1 - baixar a versão 3.3.4 no site do oficial;
+2 - copiar o arquivo bootstrap.css para a pasta /vendor/assets/stylesheets do seu projeto;
+3 - copiar o arquivo bootstrap.js para a pasta /vendor/assets/stylesheets do seu projeto;
+4 - copiar a pasta fonts para a pasta /vendor/assets/ do seu projeto;
+5 - Alterar o arquivo application.rb localizado em /seu_projeto/config/ com a seguintes informação:
   
   module ModeloBootstrap3
   class Application < Rails::Application
@@ -28,5 +28,5 @@ Para configurar o bootstrap 3 no rails são necessários os seguintes passos:
       url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), 
       url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
     }
-7 - No terminal use o comando <b>rake assets:precompile -RAILS_ENV=development</b> <br/>
+7 - No terminal use o comando <b>rake assets:precompile -RAILS_ENV=development</b>;
 8 - Inicialize o servidor.      
