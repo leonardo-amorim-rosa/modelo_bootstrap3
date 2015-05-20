@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ModeloBootstrap3</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+  <li role="presentation">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a> 
+    <ul class="dropdown-menu" role="menu">
+      <li>Teste</li>     
+    </ul>
+  </li>   	
+</ul>
+
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+</button>
+
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+</button>
+
+<%= yield %>
+
+</body>
+</html>
