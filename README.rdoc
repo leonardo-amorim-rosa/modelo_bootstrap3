@@ -1,6 +1,6 @@
 Para configurar o bootstrap 3 no rails são necessários os seguintes passos:
 
-1 - baixar a versão 3.3.4 no site do oficial;
+1 - baixar a versão 3.3.4 no site oficial <br />
 2 - copiar o arquivo bootstrap.css para a pasta /vendor/assets/stylesheets do seu projeto;
 3 - copiar o arquivo bootstrap.js para a pasta /vendor/assets/stylesheets do seu projeto;
 4 - copiar a pasta fonts para a pasta /vendor/assets/ do seu projeto;
