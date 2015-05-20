@@ -15,8 +15,8 @@ Para configurar o bootstrap 3 no rails são necessários os seguintes passos:
   Substituindo "ModeloBootstrap3" pelo nome que aparece no modulo da classe.
 
 6. Abrir o arquivo bootstrap.css na pasta /vendor/assets/stylesheets e fazer as seguintes alterações:
-  6.1. Buscar por @font-faces;
-  6.1. Substitua pelo trecho abaixo:
+6.1. Buscar por @font-faces;
+6.1. Substitua pelo trecho abaixo:
 
     @font-face {
       font-family: 'Glyphicons Halflings';
