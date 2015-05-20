@@ -2,7 +2,7 @@
 
 Para configurar o bootstrap 3 no rails são necessários os seguintes passos:
 
-Baixar a versão 3.3.4 no site oficial
+Baixar a versão 3.3.4 no site oficial;
 
 Copiar o arquivo bootstrap.css para a pasta /vendor/assets/stylesheets do seu projeto;
 
@@ -18,9 +18,10 @@ Alterar o arquivo application.rb localizado em /seu_projeto/config/ com a seguin
     #bootstrap diretório das imagens
     config.assets.paths << "#{ModeloBootstrap3}/vendor/assets/fonts"
 
-  Substituindo "ModeloBootstrap3" pelo nome que aparece no modulo da classe.
 
-Abrir o arquivo bootstrap.css na pasta /vendor/assets/stylesheets, buscar por <b>@font-faces</b> e substituir
+Substituindo <b>ModeloBootstrap3</b> pelo nome que aparece no modulo da classe.
+
+Abrir o arquivo bootstrap.css na pasta /vendor/assets/stylesheets, buscar por <b>@font-face</b> e substituir
 pelo código abaixo:
 
     @font-face {
@@ -36,4 +37,4 @@ pelo código abaixo:
 
 No terminal use o comando <b>rake assets:precompile -RAILS_ENV=development</b>;
 
-nicialize o servidor.      
+Inicialize o servidor.      
